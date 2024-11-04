@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <script src="app.js"></script>
+    <a href="#" onclick="alert('you are click on the link')">link</a>
+    <div id="mobile_Phone">
+<img onclick="alert('thanks for purchasing')" src="https://www.ineedamobile.com/wp-content/uploads/2019/03/iphone-x-600x598.png" alt="">
+<img onclick="alert('thanks for purchasing')"src="https://api.thechennaimobiles.com/1719121334790.webp" alt="">
+<img onclick="alert('thanks for purchasing')"src="https://opsg-img-cdn-gl.heytapimg.com/epb/202406/26/IzcVfAu2kdJjoeYS.png" alt="">
+
+
+
+    </div>
+
+      
+   
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>20</td>
+                <td>A</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>22</td>
+                <td>B</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Mike Johnson</td>
+                <td>21</td>
+                <td>A</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Emily Davis</td>
+                <td>23</td>
+                <td>C</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>David Wilson</td>
+                <td>19</td>
+                <td>B</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Sarah Brown</td>
+                <td>20</td>
+                <td>A</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>James Miller</td>
+                <td>21</td>
+                <td>B</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Linda Garcia</td>
+                <td>22</td>
+                <td>C</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Robert Martinez</td>
+                <td>19</td>
+                <td>A</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Jessica Lopez</td>
+                <td>23</td>
+                <td>B</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <script>
+        function deleteRow(button) {
+          
+            const row = button.parentNode.parentNode;
+          
+            row.parentNode.removeChild(row);
+        }
+    </script>
+    
+    <div>
+        <img id="img" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Light Bulb" 
+        onmouseover="this.src='https://www.w3schools.com/js/pic_bulbon.gif'" 
+        onmouseleave="this.src='https://www.w3schools.com/js/pic_bulboff.gif'">
+    </div>
+    <div>
+        <h1>Counter: <span id="counter">0</span></h1>
+        <button onclick="increaseCounter()">increase</button>
+        <button onclick="decreaseCounter()">decrease</button>
+    </div>
+
+</body>
+</html>
